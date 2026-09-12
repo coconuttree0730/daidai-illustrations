@@ -2,7 +2,11 @@
 
 每张图单独生成。根据正文内容替换变量，不要把多张图拼在一起。
 
-生成时必须把 `three-view.png` 作为图像参考输入，确保 daidai 的角色一致性。
+生成时必须把对应版本的三视图作为图像参考输入，确保 daidai 的角色一致性：
+- 标准版：`assets/standard/three-view.png`
+- Q 版：`assets/chibi/three-view.png`
+
+## 标准版提示词模板
 
 ```text
 Generate one standalone 16:9 horizontal Chinese article illustration.
@@ -37,6 +41,43 @@ Character daidai is full color as described above. All props are pure black line
 
 Constraints:
 One image explains only one core structure. Keep the main subject around 40%-60% of the canvas. Preserve at least 35% blank white space. Use at most 5-8 short handwritten Chinese labels. Do not write a title in the top-left corner. Do not write the structure type on the image. Do not make it a formal diagram, course slide, or dense explainer. Do not color any props or machines. Do not make daidai black-and-white — he must be full color. Do not copy prior examples or reuse known case compositions unless explicitly requested; invent a fresh visual metaphor for this specific article. It should be clear but not instructional, interesting but not childish, strange but clean.
+```
+
+## Q 版提示词模板
+
+```text
+Generate one standalone 16:9 horizontal Chinese article illustration in chibi Q-version style.
+
+Visual DNA:
+Pure white background. Lots of empty white space. Sparse red/orange/blue handwritten Chinese annotations. Clean absurd product-sketch feeling. No gradients, no shadows, no paper texture, no complex background, no commercial vector style, no PPT infographic look, no realistic UI.
+
+CRITICAL: Two-layer art style.
+1. The character "daidai" must be FULL COLOR hand-drawn in CHIBI Q-VERSION: a cute chibi male programmer, ~2.5 head-body ratio, very large head with small round body, huge round brown eyes with bright highlights taking up ~1/3 of the face, round chubby face, small nose and mouth, calm earnest slightly呆萌 expression. Fluffy messy black short hair with bangs. He wears a blue-gray-purple vertical striped loose button-up shirt (open collar over a black crew-neck tee, sleeves rolled to mid-forearm), a thin black cord choker necklace with a tiny irregular turquoise stone pendant, a thin red bracelet on his right wrist, dark charcoal wide-leg trousers, black round-toe leather shoes. For work scenes, he wears a black lanyard with an ID badge (black frame, white card, faint blurry handwritten "daidai" on the card). The character has soft hand-drawn watercolor-like coloring, clean outlines, low-saturation flat colors. Cute but not childish.
+2. EVERYTHING EXCEPT the character — all machines, objects, props, paper, scenery — must be PURE BLACK-AND-WHITE PENCIL LINE ART: only black hand-drawn lines and light pencil hatching shadows. ABSOLUTELY NO color fills, no gray blocks, no beige fills, no colored fills on any prop. The props must look like a simple pencil sketch on white paper.
+
+Theme:
+{正文配图主题}
+
+Structure type:
+{结构类型：Workflow / 系统局部 / 前后对比 / 角色状态 / 概念隐喻 / 方法分层 / 地图路线 / 小漫画分镜}
+
+Core idea:
+{这张图要表达的核心意思}
+
+Composition:
+{具体画面：Q版daidai在哪里、正在做什么、主要物件是什么、信息如何流动}
+
+Suggested elements:
+{元素1} / {元素2} / {元素3} / {元素4}
+
+Chinese handwritten labels:
+{标注词1} / {标注词2} / {标注词3} / {标注词4} / {可选标注词5}
+
+Color use:
+Character daidai is full color as described above. All props are pure black line art only. Orange for main flow/path/arrows. Red only for key warnings/problems/results (also matches the red bracelet). Blue only for secondary notes or system state (also matches the turquoise pendant).
+
+Constraints:
+One image explains only one core structure. Keep the main subject around 40%-60% of the canvas. Preserve at least 35% blank white space. Use at most 5-8 short handwritten Chinese labels. Do not write a title in the top-left corner. Do not write the structure type on the image. Do not make it a formal diagram, course slide, or dense explainer. Do not color any props or machines. Do not make daidai black-and-white — he must be full color. Do not copy prior examples or reuse known case compositions unless explicitly requested; invent a fresh visual metaphor for this specific article. The chibi character should be cute but earnest, not overly childish or with sparkly star eyes.
 ```
 
 ## 图像编辑提示

@@ -29,7 +29,7 @@
 - 真实 UI 截图或科技感界面。
 - 中文错字严重或标注不可读。
 - 画面太死板，没有荒诞隐喻。
-- 和 `assets/examples/` 里的旧案例构图过于相似。
+- 和 `assets/standard/examples/` 或 `assets/chibi/examples/` 里的旧案例构图过于相似。
 - **道具/机器被填上了颜色**（必须纯线稿）。
 - **daidai 变成了黑白线稿**（必须全彩）。
 - daidai 的服装颜色变了、发型变了、配饰丢了。
@@ -43,7 +43,7 @@
 - 太 PPT：去掉标题、边框、整齐网格和过多箭头，改成手绘场景。
 - 太像旧案例：保留核心意思，换掉主物件和 daidai 动作。
 - 道具有色：用图像编辑工具把道具改为纯线稿。
-- daidai 不像：重新生成，确保传入 three-view.png 作为角色参考。
+- daidai 不像：重新生成，确保传入对应版本的三视图（标准版 `assets/standard/three-view.png` / Q 版 `assets/chibi/three-view.png`）作为角色参考。
 - 文字错：优先局部编辑；错得多就重生成并减少标注数量。
 
 ## 交付判断
